@@ -1,46 +1,16 @@
 import 'package:fitness_app/clippers/appbarclipper.dart';
 import 'package:fitness_app/constants/colors.dart';
+import 'package:flutter/material.dart';
 import 'package:fitness_app/pages/clallenges.dart';
 import 'package:fitness_app/pages/goals.dart';
-import 'package:fitness_app/pages/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class HomePage extends StatelessWidget {
+class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-              icon: Icon(
-                FontAwesomeIcons.solidHeart,
-                size: 20,
-              ),
-              title: Text('')),
-          BottomNavigationBarItem(
-              icon: Icon(
-                FontAwesomeIcons.search,
-                size: 20,
-              ),
-              title: Text('')),
-          BottomNavigationBarItem(
-              icon: Icon(
-                FontAwesomeIcons.bell,
-                size: 20,
-              ),
-              title: Text('')),
-          BottomNavigationBarItem(
-              icon: Icon(
-                FontAwesomeIcons.user,
-                size: 20,
-              ),
-              title: Text(''))
-        ],
-      ),
-
-            backgroundColor: Colors.grey[100],
+      backgroundColor: Colors.grey[100],
       body: SingleChildScrollView(
         child: Container(
           child: Column(
@@ -426,7 +396,7 @@ class DashboardStat extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: 'Montserrat',
-                    fontSize: 16,
+                    fontSize: 20,
                   ),
                 ),
                 IconButton(
