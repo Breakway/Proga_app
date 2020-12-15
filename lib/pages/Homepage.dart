@@ -1,8 +1,8 @@
 import 'package:fitness_app/clippers/appbarclipper.dart';
 import 'package:fitness_app/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:fitness_app/pages/clallenges.dart';
-import 'package:fitness_app/pages/goals.dart';
+import 'package:fitness_app/pages/Challenges.dart';
+import 'package:fitness_app/pages/Goals.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
