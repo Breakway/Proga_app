@@ -227,7 +227,7 @@ class ChallengesSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 165,
+      height: 168,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,

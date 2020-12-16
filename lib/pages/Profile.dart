@@ -63,7 +63,7 @@ class Profile extends StatelessWidget {
                 controller: emailController,
                 decoration: InputDecoration(
                   border: InputBorder.none,
-                  hintText: '   example@mail.com',
+                  hintText: ' example@mail.com',
                 ),
               ),
             ),
@@ -82,13 +82,13 @@ class Profile extends StatelessWidget {
                 controller: passwordController,
                 decoration: InputDecoration(
                   border: InputBorder.none,
-                  hintText: '  Repeat Password',
+                  hintText: ' Enter the password',
                 ),
               ),
             ),
           ),
           Padding(
-              padding: const EdgeInsets.fromLTRB(55, 480, 55, 0),
+              padding: const EdgeInsets.fromLTRB(55, 490, 55, 0),
               child: RaisedButton(
                 onPressed: () {
                   context.read<AuthenticationService>().signIn(
@@ -98,6 +98,26 @@ class Profile extends StatelessWidget {
                 },
                 child: Text("Sign in"),
               )),
+          Padding(
+              padding: const EdgeInsets.fromLTRB(255, 490, 55, 0),
+              child: RaisedButton(
+                onPressed: () {
+                  context.read<AuthenticationService>().signUp(
+                    email: emailController.text.trim(),
+                    password: passwordController.text.trim(),
+                  );
+                },
+                child: Text("Sign up"),
+              )),
+          Padding(
+              padding: const EdgeInsets.fromLTRB(156, 490, 55, 0),
+              child: RaisedButton(
+                onPressed: () {
+                  context.read<AuthenticationService>().signOut();
+                },
+                child: Text("Sign out"),
+              )),
+
         ],
       ),
     );
