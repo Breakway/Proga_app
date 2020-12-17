@@ -413,10 +413,10 @@ class DashboardStat extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 90,
+          top: 80,
           left: 25,
           right: 25,
-          bottom: -15,
+          bottom: -19,
           child: Card(
             elevation: 3.0,
             shape: RoundedRectangleBorder(
@@ -426,7 +426,7 @@ class DashboardStat extends StatelessWidget {
               children: <Widget>[
                 Padding(
                   padding:
-                      const EdgeInsets.only(top: 25.0, left: 40, right: 40),
+                      const EdgeInsets.only(top: 10, left: 40, right: 40),
                   child: Column(
                     children: <Widget>[
                       Text(
